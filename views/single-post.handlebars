@@ -2,15 +2,15 @@
 
 {{!-- form and comments --}}
 {{#if loggedIn}}
-<div class="card">
+<div id="card-fixed" class="card">
   <h2 class="card-header">Comment</h2>
   <form class="card-body comment-form" id="comment-form">
     <div>
       <textarea id="comment" name="comment-body"></textarea>
     </div>
-<img src="{{post.photo}}">
+<img id= "lp-pic" src="{{post.photo}}">
     <div>
-      <button type="submit" class="btn">Add A Comment</button>
+      <button type="submit" id="click" class="btn">Add A Comment</button>
     </div>
   </form>
 </div>
